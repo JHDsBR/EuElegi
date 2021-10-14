@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  euelegiapp:
+    build: .
+    command: npm start
+    ports:
+      - "4200:4200"
+    volumes:
+      - .:/usr/app
