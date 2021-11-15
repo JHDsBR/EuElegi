@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\controller",
+    "\\src\\app\\model",
+    "\\src\\app\\Shared",
+    "\\src\\app\\Shared\\Model",
+    "\\src\\app\\Shared\\service",
+    "\\src\\app\\view",
+    "\\src\\environments"
+  ],
+  "SelectedNode": "\\src\\app\\Shared\\Model\\Deputados.model.ts",
+  "PreviewInSolutionExplorer": false
+}
