@@ -1,4 +1,6 @@
 export class Response{
-  dados: any[];
-  links: any[];
+  dados!: any[];
+  links!: any[];
+
+
 }

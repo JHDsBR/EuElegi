@@ -11,19 +11,16 @@
 </head>
 
 <body>
+
   <div class="head">
     <h1>EuElegi</h1>
   </div>
-  <div class="container">
-    <mat-grid-list cols="4" rowHeight="2:1">
-      <mat-grid-tile>Teste</mat-grid-tile>
-      <mat-grid-tile>Teste</mat-grid-tile>
-      <mat-grid-tile>Teste</mat-grid-tile>
-      <mat-grid-tile>Teste</mat-grid-tile>
-      <mat-grid-tile>Teste</mat-grid-tile>
-    </mat-grid-list>
+  <div *ngFor="let deputado of deputados">
+    <p>
+      {{deputado.nome}}
+    </p>
+    <img src={{deputado.urlFoto}}>
   </div>
-  
 </body>
 </html>
 <router-outlet></router-outlet>
