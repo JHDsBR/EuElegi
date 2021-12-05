@@ -4,13 +4,13 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\controller",
-    "\\src\\app\\model",
     "\\src\\app\\Shared",
+    "\\src\\app\\Shared\\Model",
     "\\src\\app\\Shared\\service",
     "\\src\\app\\view",
     "\\src\\assets",
     "\\src\\environments"
   ],
-  "SelectedNode": "\\src\\app\\app.component.ts",
+  "SelectedNode": "\\src\\app\\app.module.ts",
   "PreviewInSolutionExplorer": false
 }
