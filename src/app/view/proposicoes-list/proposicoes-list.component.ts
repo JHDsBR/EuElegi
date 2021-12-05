@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ProposicoesService } from 'src/app/Shared/service/proposicoes.service';
+import { Proposicoes } from 'src/app/Shared/Model/Proposicoes.model';
 
 @Component({
   selector: 'app-proposicoes-list',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProposicoesListComponent implements OnInit {
 
-  constructor() { }
+  proposicoes!: Proposicoes[];
 
-  ngOnInit(): void {
+  constructor(
+    public proposicoesService: ProposicoesService
+  ){}
+
+  ngOnInit(): void{
+    this.getProposicoes();
   }
 
+  getProposicoes(){
+    this.proposicoesService.getProposicoes().subscribe(data => {
+      this.proposicoes = data.dados;
+      console.log(data.dados);
+    });
+  }
 }
