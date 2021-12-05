@@ -8,10 +8,14 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { HttpClientModule } from '@angular/common/http';
 
 import {MatCardModule} from '@angular/material/card'; // TESTE ----------
+import { VotacoesListComponent } from './view/votacoes-list/votacoes-list.component';
+import { ProposicoesListComponent } from './view/proposicoes-list/proposicoes-list.component'; 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    VotacoesListComponent,
+    ProposicoesListComponent
   ],
   imports: [
     BrowserModule,
