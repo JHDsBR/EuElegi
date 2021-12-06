@@ -10,24 +10,50 @@
     </style>
 </head>
 
-<body>
+  <body>
+    <div style="background-color: #125FC9; background-size: contain; height: 150px;">
+      <mat-toolbar style="background-color: #125FC9;">
+        <span style="background-color: #125FC9; font-size: 54px; color: aliceblue; margin-top: 15px;">
+          EuElegi
+        </span>
+        <mat-nav-list style="background-color: #125FC9; margin-top: 20px;">
+          <a style="background-color: #125FC9; font-size: 30px; color: aliceblue; margin-left: 1950px;">Votações</a>
+          <span style="margin-left: 5px; color: aliceblue; background-color: #125FC9;">|</span>
+          <a style="background-color: #125FC9; font-size: 30px;color: aliceblue; margin-top: 15px; margin-left: 10px;">Proposições</a>
+        </mat-nav-list>
+      </mat-toolbar>
+    </div>
+   <span>
+     
+     <h1 style="color: #3F3F3F; font-size: 40px; padding: 30px;">Deputados</h1> 
+   </span> 
 
+
+    <div>
+      <!-- 
   <app-proposicoes-list> </app-proposicoes-list>
   
-  <app-votacoes-list> </app-votacoes-list>
+  <app-votacoes-list> </app-votacoes-list> -->
+          
+        <mat-grid-list cols="5" rowHeight="5:5" gutterSize="30px" >
+          <mat-card>
+            <mat-grid-tile *ngFor="let deputado of deputados" class="deputados-geral">
+              <mat-card-header >
+                  <div>
+                    <button (click)="openDialog(); selectDeputados()" >
+                      <img style="width: 205px; height: 324px; border: 2px; border-radius: 5px;" src={{deputado.urlFoto}}>
+                    </button>
+                    <div style="vertical-align: sub; text-align: center;">
+                      <mat-card-title style="font-size: 27px;" >{{deputado.nome}}</mat-card-title>
+                      <mat-card-subtitle style="font-size: 23px;">{{deputado.siglaPartido}}</mat-card-subtitle>
+                    </div>
+                  </div>
+              </mat-card-header>
+            </mat-grid-tile>  
+          </mat-card>
+        </mat-grid-list>
+    </div>
+  </body>
 
-  <div class="head">
-    <h1>EuElegi</h1>
-  </div>
-  <div *ngFor="let deputado of deputados">
-    <p>
-      {{deputado.nome}}
-    </p>
-    <img src={{deputado.urlFoto}}>
-  </div>
-
-
-
-</body>
 </html>
 <router-outlet></router-outlet>

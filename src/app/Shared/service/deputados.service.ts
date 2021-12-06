@@ -18,4 +18,8 @@ export class DeputadosService {
     return this.httpClient.get<Response>(this.apiUrl);
   }
 
+  public selectDeputados(): Observable<Response>{
+    return this.httpClient.get<Response>(`${this.apiUrl}/{id}`);
+    }
+
 }

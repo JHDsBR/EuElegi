@@ -1,22 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 *{
     background-color: white;
-    padding: 5px;
-
-};
-h1{
+    padding: 0px;
+}
+.head{
     font-family: 'Oswald', sans-serif;
-    font-size: 96px;
-    background-color: white;
-    
-};
+    font-size: 245px;;    
+}
 
-mat-grid-tile{
+.deputadoNome{
     
 }
 
-img {
-    width:  187.16px;
-    height: 339.45px;
-    object-fit: cover;
+
+.mat-grid-tile{
+    font-family: 'Oswald', sans-serif;
+    font-size: 104px;
+}
+
+.img {
+    
 }
